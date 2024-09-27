@@ -1,0 +1,57 @@
+/* What We Do Section */
+
+.what-we-do {
+    background-color: var(--background-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+    color: var(--secondary-color);
+}
+
+.what-we-do p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
