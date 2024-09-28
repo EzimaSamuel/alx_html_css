@@ -1,0 +1,95 @@
+/* General Styles */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+/* Our Results Section */
+
+.section-results {
+    background-color: #0e1624;
+    /* Dark background as seen in the image */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+
+/* Pentagon Container */
+
+.pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* Pentagon Shape */
+
+.pentagon {
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    /* Bright red as in the design */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+    transform: scale(1.05);
+    /* Small zoom on hover */
+}
+
+
+/* Pentagon Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.content p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content span {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .pentagon-container {
+        flex-direction: column;
+    }
+    .pentagon {
+        margin-bottom: 20px;
+    }
+}
