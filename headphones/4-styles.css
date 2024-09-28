@@ -1,0 +1,100 @@
+/* Footer Section */
+
+.footer-section {
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #FF6565;
+    /* Accent color for column titles */
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 1rem;
+    color: #ccc;
+    /* Light gray text for paragraphs and links */
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #FF6565;
+    /* Hover color for links */
+}
+
+
+/* Social Media Links */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #FF6565;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Zoom in on hover */
+}
+
+
+/* Copyright Text */
+
+.footer-section p.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    /* Lighter gray for copyright */
+    margin-top: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
